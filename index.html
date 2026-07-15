@@ -56,12 +56,13 @@
 
             <h3 style="margin: 30px 0 15px 0; font-weight: 600;">הדרך שלך לפריסטייל</h3>
             
+            <!-- התיקון כאן -->
             <div class="card" style="display: flex; justify-content: space-between; align-items: center;">
                 <div>
                     <div style="font-weight: 600; font-size: 17px; margin-bottom: 5px;">Double Touch</div>
                     <div style="font-size: 13px; background: rgba(230, 168, 0, 0.15); color: var(--accent); padding: 4px 10px; border-radius: 10px; display: inline-block; font-weight: 600;">+ XP 80</div>
                 </div>
-                <i data-lucide="play-circle" style="color: var(--accent); width: 32px; height: 32px;"></i>
+                <i data-lucide="play-circle" style="color: var(--accent); width: 36px; height: 36px; margin-right: 10px;"></i>
             </div>
         </div>
         
@@ -80,6 +81,7 @@
             const container = document.getElementById('app-container');
             const newTheme = container.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
             container.setAttribute('data-theme', newTheme);
+            lucide.createIcons(); // רענון אייקונים למקרה הצורך
         }
     </script>
 </body>
